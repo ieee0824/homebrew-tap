@@ -1,16 +1,17 @@
 class Apricot < Formula
   desc "Docker Compose alternative for Apple Container"
   homepage "https://github.com/ieee0824/apricot"
-  url "https://github.com/ieee0824/apricot/archive/refs/tags/v1.0.4.tar.gz"
-  sha256 "9df25c155ec12f4e2ba060202bb82cf9784d2dd1ff6d55a6d91db90a601b7bd2"
-  license "MIT"
-  head "https://github.com/ieee0824/apricot.git", branch: "main"
+  version "1.0.4"
 
-  depends_on "go" => :build
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/ieee0824/apricot/releases/download/v#{version}/apricot_darwin_arm64.tar.gz"
+      sha256 "e3d55e922821472b6fd13ab1fe44ef8d75a12a83933195851c0cc81a4e193d33"
+    end
+  end
 
   def install
-    ldflags = "-s -w -X main.version=#{version}"
-    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/apricot/"
+    bin.install "apricot"
   end
 
   test do
