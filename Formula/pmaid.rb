@@ -1,26 +1,26 @@
 class Pmaid < Formula
   desc "AI-powered project management assistant"
   homepage "https://github.com/ieee0824/pmaid"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ieee0824/pmaid/releases/download/v0.3.2/pmaid-darwin-arm64.tar.gz"
-      sha256 "c0317aad6cca1276296dae8573e3b09a53d5d08aa8314fdc4e8542ce36fbb96b"
+      url "https://github.com/ieee0824/pmaid/releases/download/v0.3.3/pmaid-darwin-arm64.tar.gz"
+      sha256 "3e6b4bbc9c524992d6ae64f80aa5fdfd6ae7dd7200ddb065fb2f4cbac3cf2301"
     else
-      url "https://github.com/ieee0824/pmaid/releases/download/v0.3.2/pmaid-darwin-amd64.tar.gz"
-      sha256 "e9a15ab71102875b0670799ca9c322d57e03285858801f856e42ce3d201a9edd"
+      url "https://github.com/ieee0824/pmaid/releases/download/v0.3.3/pmaid-darwin-amd64.tar.gz"
+      sha256 "90f0bd2fb4306f98cd6a216f1897e3d6fd6adb3eb49e2fcdf461d8e7c5580aad"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ieee0824/pmaid/releases/download/v0.3.2/pmaid-linux-arm64.tar.gz"
-      sha256 "175271f12d91ee747f7faa5d0dfa69eef9f5d332f6d568b04655ebc3c176af54"
+      url "https://github.com/ieee0824/pmaid/releases/download/v0.3.3/pmaid-linux-arm64.tar.gz"
+      sha256 "d4f4ed987c0a5e6b69f1b05d1d670d2344483283ae49d5bad2633abb2225bf5b"
     else
-      url "https://github.com/ieee0824/pmaid/releases/download/v0.3.2/pmaid-linux-amd64.tar.gz"
-      sha256 "183bfc9e1d780f73d66e3fd6e3a34f74dcd0be969d0dafb29e0fd90aebeedec6"
+      url "https://github.com/ieee0824/pmaid/releases/download/v0.3.3/pmaid-linux-amd64.tar.gz"
+      sha256 "85b7417cb2f1ebd19e7555fd6f030da07fcfc810b5ff7c03bf95e2193a85be14"
     end
   end
 
