@@ -11,5 +11,10 @@ cask "qcut-beta" do
 
   app "qcut.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/qcut.app"]
+  end
+
   conflicts_with cask: "qcut"
 end
