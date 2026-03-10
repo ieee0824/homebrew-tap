@@ -9,11 +9,11 @@ cask "qcut-beta" do
 
   depends_on arch: :arm64
 
-  app "qcut.app"
+  app "qcut-beta.app"
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/qcut.app"]
+                   args: ["-cr", "#{appdir}/qcut-beta.app"]
   end
 
   conflicts_with cask: "qcut"
