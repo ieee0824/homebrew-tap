@@ -15,6 +15,4 @@ cask "qcut" do
     system_command "/usr/bin/xattr",
                    args: ["-cr", "#{appdir}/qcut.app"]
   end
-
-  conflicts_with cask: "qcut-beta"
 end
