@@ -1,8 +1,8 @@
 cask "qcut-beta" do
-  version "0.2.1-beta.1"
-  sha256 "938b8be88e3d3dece62ce33ae1e94b31689fbd744941fda38f71d3be60eebfba"
+  version "0.3.0-beta.1"
+  sha256 "35753b2b16d8690043bd5343d4d38091ac49f30bc801754525a2eba29666b0a8"
 
-  url "https://github.com/ieee0824/qcut/releases/download/v#{version}/qcut-v#{version}-darwin-aarch64.dmg"
+  url "https://github.com/ieee0824/qcut-v#{version}-darwin-aarch64.dmg"
   name "qcut (Beta)"
   desc "Cross-platform video editor"
   homepage "https://github.com/ieee0824/qcut"
