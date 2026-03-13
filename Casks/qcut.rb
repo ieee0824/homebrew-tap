@@ -1,6 +1,6 @@
 cask "qcut" do
-  version "0.1.0"
-  sha256 "be42c99b208b3da71c1f26c5dbcca4e5ba3a24b7cf4f49d6fd17a963c1281329"
+  version "0.2.0"
+  sha256 "458b2ae40ae7ce9a3d6f2021bff0fe235bd2b046ce14fdf782319d9248cc3bff"
 
   url "https://github.com/ieee0824/qcut/releases/download/v#{version}/qcut-darwin-aarch64.dmg"
   name "qcut"
