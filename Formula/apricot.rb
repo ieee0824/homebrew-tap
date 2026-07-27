@@ -1,12 +1,12 @@
 class Apricot < Formula
   desc "Docker Compose alternative for Apple Container"
   homepage "https://github.com/ieee0824/apricot"
-  version "1.2.1"
+  version "1.2.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ieee0824/apricot/releases/download/v1.2.1/apricot_darwin_arm64.tar.gz"
-      sha256 "2bf081564525dbc03e0bca3c1e0c6e68c367ac364ada1ec9b3d0301d03eb4566"
+      url "https://github.com/ieee0824/apricot/releases/download/v1.2.2/apricot_darwin_arm64.tar.gz"
+      sha256 "cfe854f5d129d148c1941b988694d153e8c0bcddfb75f49191617cd632696ad5"
     end
   end
 
